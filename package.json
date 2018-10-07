@@ -1,0 +1,14 @@
+{
+  "name": "binance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "binance.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ygreq",
+  "license": "ISC",
+  "dependencies": {
+    "node-binance-api": "^0.8.3"
+  }
+}
