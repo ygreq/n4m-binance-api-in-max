@@ -13,10 +13,18 @@ const binance = require('node-binance-api')().options({
 // This will be printed directly to the Max console
 Max.post(`loaded the ${path.basename(__filename)} script`);
 
-// Use the 'addHandler' function to register a function for a particular message
+// Get latest price for a ticker
 Max.addHandler("tickerNameSelector", (tickerName) => {
     binance.prices(tickerName, (error, ticker) => {
       Max.post('Price of '+ tickerName + ' ' + ticker[tickerName]); 
       Max.outlet(tickerName + ' ' + ticker[tickerName]);
       });
+});
+
+// Get latest price for all tickers
+Max.addHandler("getPriceForAll", () => {
+binance.prices((error, ticker) => {
+  Max.post("prices()", ticker);
+  Max.outlet(ticker);
+});
 });
