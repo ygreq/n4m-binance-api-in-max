@@ -24,7 +24,7 @@ Max.addHandler("tickerNameSelector", (tickerName) => {
 // Get latest price for all tickers
 Max.addHandler("getPriceForAll", () => {
 binance.prices((error, ticker) => {
-  Max.post("prices()", ticker);
+  //Max.post("prices()", ticker);
   Max.outlet(ticker);
 });
 });
