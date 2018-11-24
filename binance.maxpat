@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 33.0, 102.0, 1040.0, 684.0 ],
+		"rect" : [ 34.0, 83.0, 1468.0, 714.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,24 +39,130 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 91.0, 619.0, 94.0, 22.0 ],
-					"text" : "route key secret"
+					"id" : "obj-59",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 568.5, 132.0, 73.0, 100.0 ],
+					"text" : "The result will be saved in the dict close to the node.script debug tool"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-42",
-					"maxclass" : "newobj",
+					"id" : "obj-58",
+					"linecount" : 9,
+					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.5, 638.0, 32.0, 22.0 ],
-					"text" : "print"
+					"patching_rect" : [ 1076.5, 66.5, 91.0, 127.0 ],
+					"text" : "You need to input your API keys before doing this. The result will be saved in the dict close to the node.script debug tool"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 995.0, 8.0, 179.0, 20.0 ],
+					"text" : "Get the list of current balances. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 676.0, 8.0, 109.0, 20.0 ],
+					"text" : "Get the price of.."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 99.5, 24.5, 109.0, 20.0 ],
+					"text" : "Start / Stop Server"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "dump", "bang" ],
+					"patching_rect" : [ 35.5, 107.0, 65.0, 22.0 ],
+					"text" : "t b dump b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 35.5, 72.0, 44.0, 22.0 ],
+					"text" : "sel 1 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 35.5, 7.0, 55.0, 55.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 181.0, 107.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 181.0, 171.0, 137.0, 22.0 ],
+					"text" : "prepend authentification"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 665.5, 77.5, 138.0, 22.0 ],
+					"text" : "prepend symbolSelector"
 				}
 
 			}
@@ -67,7 +173,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 134.0, 534.0, 39.0, 22.0 ],
+					"patching_rect" : [ 120.0, 335.0, 39.0, 22.0 ],
 					"text" : "dump"
 				}
 
@@ -79,7 +185,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 125.0, 416.0, 295.0, 60.0 ],
+					"patching_rect" : [ 111.0, 217.0, 295.0, 60.0 ],
 					"text" : "As a security measure, save your API keys outside of the application folder in a text file formated for coll. See example apiKeyExample.txt. Open it in coll with [opendialog]",
 					"textcolor" : [ 0.996078431606293, 0.0, 0.0, 1.0 ]
 				}
@@ -92,7 +198,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.5, 534.0, 80.0, 22.0 ],
+					"patching_rect" : [ 35.5, 335.0, 80.0, 22.0 ],
 					"text" : "prepend read"
 				}
 
@@ -106,7 +212,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.5, 493.5, 450.0, 23.0 ]
+					"patching_rect" : [ 52.5, 294.5, 450.0, 23.0 ]
 				}
 
 			}
@@ -118,7 +224,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 49.5, 416.0, 24.0, 24.0 ]
+					"patching_rect" : [ 35.5, 217.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -129,7 +235,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 49.5, 451.0, 67.0, 22.0 ],
+					"patching_rect" : [ 35.5, 252.0, 67.0, 22.0 ],
 					"text" : "opendialog"
 				}
 
@@ -141,7 +247,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 49.5, 577.0, 50.5, 22.0 ],
+					"patching_rect" : [ 35.5, 378.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -155,10 +261,10 @@
 					"id" : "obj-34",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 964.0, 60.5, 29.5, 22.0 ],
-					"text" : "t l 2"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "clear" ],
+					"patching_rect" : [ 1017.5, 77.5, 57.0, 22.0 ],
+					"text" : "t l 1 clear"
 				}
 
 			}
@@ -169,7 +275,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 964.0, 11.0, 146.0, 22.0 ],
+					"patching_rect" : [ 1017.5, 35.5, 146.0, 22.0 ],
 					"text" : "getListOfCurrentBalances"
 				}
 
@@ -181,7 +287,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 577.0, 93.5, 29.5, 22.0 ],
+					"patching_rect" : [ 665.5, 119.0, 29.5, 22.0 ],
 					"text" : "t l 2"
 				}
 
@@ -193,7 +299,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 444.0, 244.0, 42.0, 22.0 ],
+					"patching_rect" : [ 460.5, 512.5, 42.0, 22.0 ],
 					"text" : "gate 2"
 				}
 
@@ -203,10 +309,10 @@
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 432.0, 53.0, 31.0, 22.0 ],
-					"text" : "t s 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "clear" ],
+					"patching_rect" : [ 510.5, 97.5, 61.0, 22.0 ],
+					"text" : "t s 1 clear"
 				}
 
 			}
@@ -217,7 +323,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 444.0, 293.0, 72.0, 22.0 ],
+					"patching_rect" : [ 460.5, 577.5, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -229,7 +335,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 444.0, 344.0, 50.5, 22.0 ],
+					"patching_rect" : [ 460.5, 628.5, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -300,7 +406,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 334.5, 11.0, 38.0, 22.0 ],
+					"patching_rect" : [ 374.5, 449.0, 38.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -315,24 +421,23 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 833.0, 99.0, 78.0, 60.0 ],
-					"text" : "type the pair you want to follow and press enter"
+					"patching_rect" : [ 834.5, 8.0, 151.0, 47.0 ],
+					"text" : "type the pair you want to follow and press enter. Buggy!!"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 916.0, 258.5, 86.0, 33.0 ],
-					"text" : "capitalize all letters."
+					"patching_rect" : [ 905.5, 301.5, 120.0, 20.0 ],
+					"text" : "capitalize all letters"
 				}
 
 			}
@@ -343,21 +448,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 820.0, 346.0, 84.0, 22.0 ],
+					"patching_rect" : [ 769.5, 358.5, 84.0, 22.0 ],
 					"text" : "BTCUSDT"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 717.0, 346.0, 96.0, 22.0 ],
-					"text" : "print upperCase"
 				}
 
 			}
@@ -370,7 +462,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 717.0, 264.0, 191.0, 22.0 ],
+					"patching_rect" : [ 834.5, 276.5, 191.0, 22.0 ],
 					"text" : "vexpr $i1-32*($i1>96 && $i1<123)"
 				}
 
@@ -384,7 +476,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 717.0, 289.0, 46.0, 22.0 ],
+					"patching_rect" : [ 834.5, 301.5, 46.0, 22.0 ],
 					"text" : "itoa"
 				}
 
@@ -398,7 +490,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "list" ],
-					"patching_rect" : [ 717.0, 239.0, 46.0, 22.0 ],
+					"patching_rect" : [ 834.5, 251.5, 46.0, 22.0 ],
 					"text" : "atoi"
 				}
 
@@ -410,7 +502,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "clear", "bang" ],
-					"patching_rect" : [ 717.0, 65.0, 51.0, 22.0 ],
+					"patching_rect" : [ 834.5, 77.5, 51.0, 22.0 ],
 					"text" : "t clear b"
 				}
 
@@ -422,7 +514,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 717.0, 189.0, 59.0, 22.0 ],
+					"patching_rect" : [ 834.5, 201.5, 59.0, 22.0 ],
 					"text" : "route text"
 				}
 
@@ -434,7 +526,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 744.0, 152.5, 41.0, 22.0 ],
+					"patching_rect" : [ 861.5, 165.0, 41.0, 22.0 ],
 					"text" : "sel 13"
 				}
 
@@ -446,7 +538,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 476.0, 42.0, 86.0, 33.0 ],
+					"patching_rect" : [ 510.5, 10.0, 86.0, 33.0 ],
 					"text" : "Get the price list of all pairs"
 				}
 
@@ -459,7 +551,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 717.0, 99.0, 100.0, 50.0 ],
+					"patching_rect" : [ 834.5, 111.5, 100.0, 50.0 ],
 					"text" : "btcusdt"
 				}
 
@@ -470,7 +562,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 520.0, 293.0, 91.0, 22.0 ],
+					"patching_rect" : [ 536.5, 577.5, 91.0, 22.0 ],
 					"text" : "print Max.outlet"
 				}
 
@@ -482,20 +574,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 432.0, 11.0, 130.0, 22.0 ],
+					"patching_rect" : [ 510.5, 55.5, 130.0, 22.0 ],
 					"text" : "getPriceForAllSymbols"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 717.0, 11.0, 118.0, 33.0 ],
-					"text" : "Switch from Max which pair to follow"
 				}
 
 			}
@@ -506,7 +586,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 577.0, 11.0, 65.0, 22.0 ],
+					"patching_rect" : [ 686.5, 35.5, 65.0, 22.0 ],
 					"text" : "BTCUSDT"
 				}
 
@@ -518,20 +598,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 650.0, 11.0, 57.0, 22.0 ],
+					"patching_rect" : [ 759.5, 35.5, 57.0, 22.0 ],
 					"text" : "BNBBTC"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 577.0, 53.0, 107.0, 22.0 ],
-					"text" : "symbolSelector $1"
 				}
 
 			}
@@ -542,20 +610,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 307.5, 56.0, 65.0, 22.0 ],
+					"patching_rect" : [ 105.5, 171.0, 65.0, 22.0 ],
 					"text" : "script stop"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 378.5, 55.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -573,19 +629,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 41.0, 183.5, 400.0, 220.0 ],
+					"patching_rect" : [ 35.5, 512.5, 400.0, 220.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 486.0, 177.0, 125.0, 22.0 ]
 				}
 
 			}
@@ -596,7 +641,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.0, 56.0, 64.0, 22.0 ],
+					"patching_rect" : [ 35.5, 171.0, 64.0, 22.0 ],
 					"text" : "script start"
 				}
 
@@ -608,7 +653,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 41.0, 56.0, 194.0, 22.0 ],
+					"patching_rect" : [ 174.5, 449.0, 194.0, 22.0 ],
 					"text" : "script npm install node-binance-api"
 				}
 
@@ -623,7 +668,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 41.0, 134.0, 125.0, 22.0 ],
+					"patching_rect" : [ 35.5, 449.0, 125.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 153.0, 353.0, 174.0, 22.0 ],
 					"saved_object_attributes" : 					{
@@ -646,7 +691,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 41.0, 11.0, 286.0, 33.0 ],
+					"patching_rect" : [ 169.5, 396.0, 286.0, 33.0 ],
 					"text" : "Uses npm package found here: https://www.npmjs.com/package/node-binance-api"
 				}
 
@@ -661,21 +706,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -697,7 +735,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"midpoints" : [ 753.5, 182.5, 825.0, 182.5, 825.0, 56.0, 726.5, 56.0 ],
+					"midpoints" : [ 871.0, 195.0, 942.5, 195.0, 942.5, 68.5, 844.0, 68.5 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -705,33 +743,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
-					"midpoints" : [ 50.5, 168.0, 463.0, 168.0, 463.0, 168.0, 476.5, 168.0 ],
-					"order" : 2,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 1 ],
-					"midpoints" : [ 50.5, 168.0, 601.5, 168.0 ],
-					"order" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 156.5, 176.25, 50.5, 176.25 ],
-					"source" : [ "obj-2", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 50.5, 279.5, 529.5, 279.5 ],
+					"midpoints" : [ 45.0, 480.0, 457.5, 480.0, 457.5, 480.0, 493.0, 480.0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -739,10 +751,18 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 726.5, 329.0, 702.0, 329.0, 702.0, 42.0, 586.5, 42.0 ],
-					"order" : 2,
-					"source" : [ "obj-20", 0 ]
+					"destination" : [ "obj-6", 0 ],
+					"midpoints" : [ 151.0, 488.25, 45.0, 488.25 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"midpoints" : [ 45.0, 497.5, 546.0, 497.5 ],
+					"order" : 0,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -756,7 +776,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
+					"destination" : [ "obj-47", 0 ],
+					"midpoints" : [ 844.0, 353.5, 811.5, 353.5, 811.5, 66.5, 675.0, 66.5 ],
 					"order" : 1,
 					"source" : [ "obj-20", 0 ]
 				}
@@ -800,6 +821,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 115.0, 204.0, 10.0, 204.0, 10.0, 435.0, 45.0, 435.0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -807,6 +829,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 45.0, 204.0, 11.0, 204.0, 11.0, 435.0, 45.0, 435.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -821,14 +844,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 520.0, 438.25, 45.0, 438.25 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"midpoints" : [ 562.0, 564.0, 447.0, 564.0, 447.0, 615.0, 470.0, 615.0 ],
+					"source" : [ "obj-31", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 453.5, 236.5, 453.5, 236.5 ],
+					"midpoints" : [ 541.0, 465.0, 470.0, 465.0 ],
 					"source" : [ "obj-31", 1 ]
 				}
 
@@ -842,8 +874,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-32", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 586.5, 124.25, 50.5, 124.25 ],
+					"midpoints" : [ 675.0, 437.0, 527.5, 437.0, 527.5, 437.0, 45.0, 437.0 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -851,7 +890,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 597.0, 133.25, 453.5, 133.25 ],
+					"midpoints" : [ 685.5, 466.0, 470.0, 466.0 ],
 					"source" : [ "obj-33", 1 ]
 				}
 
@@ -859,13 +898,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 1027.0, 237.0, 706.0, 237.0, 706.0, 381.0, 706.0, 381.0, 706.0, 437.0, 45.0, 437.0 ],
 					"source" : [ "obj-34", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"midpoints" : [ 1065.0, 111.0, 1035.0, 111.0, 1035.0, 615.0, 470.0, 615.0 ],
+					"source" : [ "obj-34", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"midpoints" : [ 1046.0, 245.0, 713.0, 245.0, 713.0, 466.0, 470.0, 466.0 ],
 					"source" : [ "obj-34", 1 ]
 				}
 
@@ -873,16 +922,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 59.0, 609.0, 20.75, 609.0, 20.75, 123.0, 50.5, 123.0 ],
-					"order" : 1,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"order" : 0,
+					"midpoints" : [ 45.0, 414.5, 45.0, 414.5 ],
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -890,7 +930,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 1 ],
-					"midpoints" : [ 59.0, 482.75, 507.0, 482.75 ],
+					"midpoints" : [ 45.0, 283.75, 493.0, 283.75 ],
 					"order" : 0,
 					"source" : [ "obj-37", 0 ]
 				}
@@ -907,7 +947,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"midpoints" : [ 143.5, 566.0, 59.0, 566.0 ],
+					"midpoints" : [ 129.5, 367.0, 45.0, 367.0 ],
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -922,6 +962,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 184.0, 481.0, 171.5, 481.0, 171.5, 438.0, 45.0, 438.0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -942,7 +983,68 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 190.5, 204.0, 11.0, 204.0, 11.0, 435.0, 45.0, 435.0 ],
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"midpoints" : [ 57.5, 101.0, 115.0, 101.0 ],
+					"source" : [ "obj-53", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 91.0, 155.5, 45.0, 155.5 ],
+					"source" : [ "obj-54", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"midpoints" : [ 68.0, 148.0, 21.0, 148.0, 21.0, 372.0, 45.0, 372.0 ],
+					"source" : [ "obj-54", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"midpoints" : [ 45.0, 140.5, 190.5, 140.5 ],
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -967,13 +1069,20 @@
 				"type" : "TEXT",
 				"implicit" : 1
 			}
+, 			{
+				"name" : "apiKeyExample.txt",
+				"bootpath" : "~/Documents/GitHub/n4m-binance-api",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "light",
 				"default" : 				{
-					"fontsize" : [ 32.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : [ 32.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
