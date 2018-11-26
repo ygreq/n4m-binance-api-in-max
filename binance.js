@@ -1,51 +1,29 @@
 //Code needed for Max
 const path = require('path');
 const Max = require('max-api');
-
+const dotEnv = require('dotenv').config();
 var nodeBinanceApi = require("node-binance-api"); //Call the NPM package
+
+if (!process.env.BINANCE_API_KEY) throw new Error("Missing Binance API Key");
+if (!process.env.BINANCE_API_SECRET) throw new Error("Missing Binance API Secret");
+
+// Code necessary for Binance 
+const binance = require('node-binance-api')().options({
+  APIKEY: process.env.BINANCE_API_KEY,
+  APISECRET: process.env.BINANCE_API_SECRET,
+  useServerTime: true, // If you get timestamp errors, synchronize to server time at startup
+  test: true // If you want to use sandbox mode where orders are simulated
+});
 
 // Various variables
 let symbolName; // Holds the ticker pair name (eg BTCUSDT)
 let cryptoBalance; // Holds the name of a crypto for finding the balance (eg BTC)
 
-// Variables for the API keys
-let apiKey = '<>';
-let apiSecret = '<>';
-
-// Code necessary for Binance 
-const binance = require('node-binance-api')().options({
-  APIKEY: apiKey,
-  APISECRET: apiSecret,
-  useServerTime: true, // If you get timestamp errors, synchronize to server time at startup
-  test: true // If you want to use sandbox mode where orders are simulated
-});
 
 // This will be printed directly to the Max console
 Max.post(`loaded the ${path.basename(__filename)} script`); // Message to Max that the script has been loaded
-
-// Receive the authentification keys from Max
-Max.addHandler("key", (keyFromMax) => {
-  apiKey = keyFromMax;
-  Max.outlet("Added API key: " + apiKey);
-});
-
-Max.addHandler("secret", (secretFromMax) => {
-  apiSecret = secretFromMax;
-  Max.outlet("Added API secret: " + apiSecret);
-});
-
-// Send the authentification keys to Binance
-Max.addHandler("authentification", (bang) => {
-  const binance = require('node-binance-api')().options({
-    APIKEY: apiKey,
-    APISECRET: apiSecret,
-    useServerTime: true, // If you get timestamp errors, synchronize to server time at startup
-    test: true // If you want to use sandbox mode where orders are simulated
-  });
-  Max.outlet(" API key sent to Binance: " + apiKey);
-  Max.outlet("API secret sent to Binance: " + apiSecret);
-});
-
+Max.outlet("Done");
+Max.outlet("Added API key: " + process.env.BINANCE_API_KEY);
 
 
 // Getting latest price of a symbol

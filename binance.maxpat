@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 83.0, 1468.0, 714.0 ],
+		"rect" : [ 122.0, 124.0, 1068.0, 716.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,48 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 415.0, 252.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "dump" ],
+					"patching_rect" : [ 217.0, 107.0, 55.0, 22.0 ],
+					"text" : "t b dump"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 579.0, 512.5, 56.0, 22.0 ],
+					"text" : "sel Done"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-59",
-					"linecount" : 7,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 568.5, 132.0, 73.0, 100.0 ],
+					"patching_rect" : [ 568.5, 132.0, 81.0, 87.0 ],
 					"text" : "The result will be saved in the dict close to the node.script debug tool"
 				}
 
@@ -91,18 +127,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.5, 24.5, 109.0, 20.0 ],
 					"text" : "Start / Stop Server"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-54",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "dump", "bang" ],
-					"patching_rect" : [ 35.5, 107.0, 65.0, 22.0 ],
-					"text" : "t b dump b"
 				}
 
 			}
@@ -212,7 +236,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 52.5, 294.5, 450.0, 23.0 ]
+					"patching_rect" : [ 52.5, 301.5, 450.0, 23.0 ],
+					"text" : "C:/Users/zwsClevo/Documents/GitHub/api_key_OK.txt"
 				}
 
 			}
@@ -288,7 +313,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 665.5, 119.0, 29.5, 22.0 ],
-					"text" : "t l 2"
+					"text" : "t l 0"
 				}
 
 			}
@@ -297,10 +322,10 @@
 					"id" : "obj-32",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 460.5, 512.5, 42.0, 22.0 ],
-					"text" : "gate 2"
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 460.5, 512.5, 32.0, 22.0 ],
+					"text" : "gate"
 				}
 
 			}
@@ -706,6 +731,21 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"midpoints" : [ 262.5, 156.0, 21.0, 156.0, 21.0, 372.0, 45.0, 372.0 ],
+					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -743,8 +783,17 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
-					"midpoints" : [ 45.0, 480.0, 457.5, 480.0, 457.5, 480.0, 493.0, 480.0 ],
-					"order" : 1,
+					"midpoints" : [ 45.0, 480.0, 457.5, 480.0, 457.5, 480.0, 483.0, 480.0 ],
+					"order" : 2,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"midpoints" : [ 45.0, 497.0, 588.5, 497.0 ],
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -761,7 +810,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"midpoints" : [ 45.0, 497.5, 546.0, 497.5 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -869,13 +918,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-32", 1 ]
 				}
 
 			}
@@ -1013,32 +1055,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 91.0, 155.5, 45.0, 155.5 ],
-					"source" : [ "obj-54", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"midpoints" : [ 68.0, 148.0, 21.0, 148.0, 21.0, 372.0, 45.0, 372.0 ],
-					"source" : [ "obj-54", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"midpoints" : [ 45.0, 140.5, 190.5, 140.5 ],
-					"source" : [ "obj-54", 0 ]
+					"source" : [ "obj-53", 0 ]
 				}
 
 			}
@@ -1069,20 +1087,11 @@
 				"type" : "TEXT",
 				"implicit" : 1
 			}
-, 			{
-				"name" : "apiKeyExample.txt",
-				"bootpath" : "~/Documents/GitHub/n4m-binance-api",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "light",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 32.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -1092,7 +1101,9 @@
 						"proportion" : 0.39,
 						"autogradient" : 0.0
 					}
-
+,
+					"fontsize" : [ 32.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
