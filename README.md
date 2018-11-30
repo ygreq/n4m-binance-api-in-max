@@ -12,5 +12,5 @@ Clone or download the project. You have all that you need in this repository.
 
 Warning
 
-There is an option in the binance.js file to write your API keys in order to use this in more advanced ways. Like buying and selling. Please be sure not to share that file in case you input your private data there. As a feature hopefully me or someone else will put that code in another file. So you would know not to share that specific file along with the rest of the project. 
+Please be adviced that it uses code made by other people. I cannot guarranty for its safety. So USE THIS AT YOUR OWN RISK. Plus consider I am new to javascript so mistakes can be made. 
 
