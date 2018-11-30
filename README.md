@@ -14,3 +14,5 @@ Warning
 
 Please be adviced that it uses code made by other people. I cannot guarranty for its safety. So USE THIS AT YOUR OWN RISK. Plus consider I am new to javascript so mistakes can be made. 
 
+BTW, related to the warning, condier reading this: https://hackernoon.com/how-blockchain-technology-could-fix-the-node-js-ecosystem-bccc60832900
+
