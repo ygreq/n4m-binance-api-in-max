@@ -56,7 +56,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1544.59375, 489.0, 55.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Activate Take Profit"
 				}
 
@@ -68,8 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1492.15625, 489.0, 53.0, 47.0 ],
-					"presentation_linecount" : 4,
+					"patching_rect" : [ 1492.15625, 489.0, 55.0, 47.0 ],
 					"text" : "Activate Stop Loss"
 				}
 
@@ -106,7 +104,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1162.5, 482.5, 69.3125, 60.0 ],
-					"presentation_linecount" : 6,
 					"text" : "Start/Stop tracking of cryptocoin pair"
 				}
 
@@ -168,7 +165,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1433.90625, 489.0, 39.0, 47.0 ],
+					"patching_rect" : [ 1433.90625, 489.0, 40.0, 47.0 ],
 					"text" : "Take Profit Price"
 				}
 
@@ -204,7 +201,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1342.65625, 489.0, 43.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Stop Loss Price"
 				}
 
@@ -231,7 +227,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1741.0, 95.0, 93.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "The result will be saved in the dict bidAsk"
 				}
 
@@ -243,8 +238,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1355.75, 92.0, 101.0, 47.0 ],
-					"presentation_linecount" : 4,
+					"patching_rect" : [ 1355.75, 92.0, 102.0, 47.0 ],
 					"text" : "The result will be saved in the dict balance"
 				}
 
@@ -278,12 +272,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-138",
-					"linecount" : 4,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 495.75, 215.0, 220.0, 60.0 ],
-					"text" : "If a message is sent to node.script while the server is stopped, the server would start automatically. The message would have to be resent afterwards. "
+					"patching_rect" : [ 495.75, 215.0, 223.0, 100.0 ],
+					"text" : "If a message is sent to node.script while the server is stopped, the server would start automatically. The message would have to be resent afterwards. \n\nSometimes it gives some errors on the node.script debug tool, but it stil works"
 				}
 
 			}
@@ -401,7 +395,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 432.0, 143.5, 295.0, 22.0 ],
+					"patching_rect" : [ 432.0, 143.5, 322.58331298828125, 22.0 ],
 					"text" : "Node script running"
 				}
 
@@ -449,7 +443,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 802.0, 10.0, 70.0, 22.0 ],
+					"patching_rect" : [ 823.0, 18.5, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -462,7 +456,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 802.0, 59.0, 24.0, 24.0 ]
+					"patching_rect" : [ 827.0, 69.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -473,7 +467,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 801.5, 100.0, 63.0, 22.0 ],
+					"patching_rect" : [ 826.5, 110.5, 63.0, 22.0 ],
 					"text" : "metro 200"
 				}
 
@@ -484,7 +478,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 801.5, 204.5, 100.0, 22.0 ],
+					"patching_rect" : [ 826.5, 215.0, 100.0, 22.0 ],
 					"text" : "s toBinanceNode"
 				}
 
@@ -496,7 +490,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 741.5, 126.0, 58.0, 33.0 ],
+					"patching_rect" : [ 762.5, 136.5, 58.0, 33.0 ],
 					"text" : "Get the price of.."
 				}
 
@@ -508,7 +502,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 801.5, 165.5, 113.0, 22.0 ],
+					"patching_rect" : [ 826.5, 176.0, 113.0, 22.0 ],
 					"text" : "prepend getPriceOf"
 				}
 
@@ -520,7 +514,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 801.5, 131.5, 65.0, 22.0 ],
+					"patching_rect" : [ 826.5, 142.0, 65.0, 22.0 ],
 					"text" : "BTCUSDT"
 				}
 
@@ -543,7 +537,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1954.0, 113.0, 1612.0, 899.0 ],
+						"rect" : [ 34.0, 77.0, 1468.0, 713.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -570,7 +564,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-81",
@@ -579,7 +572,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 650.0, 696.0, 152.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "For information pursposes to see what you set"
 								}
 
@@ -592,7 +584,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 358.5, 696.0, 152.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "For information pursposes to see what you set"
 								}
 
@@ -653,7 +644,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 556.5, 554.0, 229.0, 47.0 ],
-									"presentation_linecount" : 4,
 									"text" : "A sell market order will be placed if the Take Profit is active and when the price reaches the take profit price you set "
 								}
 
@@ -665,8 +655,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 275.0, 554.0, 216.0, 47.0 ],
-									"presentation_linecount" : 9,
+									"patching_rect" : [ 275.0, 554.0, 217.0, 47.0 ],
 									"text" : "A sell market order will be placed if the Stop Loss is active and when the price reaches the stop loss price you set "
 								}
 
@@ -679,7 +668,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 603.0, 369.0, 81.0, 60.0 ],
-									"presentation_linecount" : 4,
 									"text" : "Prepare a market order for the take profit target"
 								}
 
@@ -692,7 +680,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 320.5, 373.0, 81.0, 60.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Prepare a market order for the stop loss target"
 								}
 
@@ -705,7 +692,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1155.5, 271.5, 125.0, 60.0 ],
-									"presentation_linecount" : 4,
 									"text" : "If the price is greater or equal to the take profit price you set then output 1, else 0"
 								}
 
@@ -717,8 +703,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 704.5, 271.5, 124.0, 60.0 ],
-									"presentation_linecount" : 2,
+									"patching_rect" : [ 704.5, 271.5, 125.0, 60.0 ],
 									"text" : "If the price is less or equal to the stop loss price you set then output 1, else 0"
 								}
 
@@ -741,7 +726,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 959.0, 30.0, 247.0, 20.0 ],
-									"presentation_linecount" : 6,
 									"text" : "Receive info from the Binance node.script"
 								}
 
@@ -754,7 +738,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1059.0, 416.5, 55.0, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Activate Take Profit"
 								}
 
@@ -767,7 +750,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 897.5, 416.5, 55.0, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Activate Stop Loss"
 								}
 
@@ -938,7 +920,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 117.84375, 154.5, 69.3125, 60.0 ],
-									"presentation_linecount" : 4,
 									"text" : "Start/Stop tracking of cryptocoin pair"
 								}
 
@@ -1023,7 +1004,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 20.5, 307.0, 58.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Get the price of.."
 								}
 
@@ -1048,7 +1028,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 80.5, 312.5, 93.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "ADAUSDT"
 								}
 
@@ -1360,7 +1339,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 541.5, 24.0, 103.0, 20.0 ],
-									"presentation_linecount" : 2,
 									"text" : "Take Profit Price"
 								}
 
@@ -1386,7 +1364,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 250.0, 609.0, 266.0, 22.0 ],
-									"presentation_linecount" : 4,
 									"text" : "setSellMarketOrder ADABTC 0.038"
 								}
 
@@ -1560,7 +1537,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 393.5, 24.0, 95.0, 20.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Stop Loss Price"
 								}
 
@@ -2293,7 +2269,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -2304,7 +2279,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3824,7 +3800,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -3835,7 +3810,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3862,7 +3838,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 8,
 					"numoutlets" : 3,
-					"outlettype" : [ "bang", "clear", "bang" ],
+					"outlettype" : [ "clear", "clear", "clear" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -4870,7 +4846,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -4881,7 +4856,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5289,7 +5265,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 271.0, 207.5, 112.0, 22.0 ],
-									"text" : "3898.92"
+									"text" : "3885.46"
 								}
 
 							}
@@ -5313,7 +5289,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 358.0, 161.0, 187.0, 22.0 ],
-									"text" : "ADAUSDT 0.03804"
+									"text" : "BTCUSDT 3885.46"
 								}
 
 							}
@@ -7647,7 +7623,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -7658,7 +7633,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9833,7 +9809,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -9844,7 +9819,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10038,7 +10014,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 980.0, 92.0, 84.5, 47.0 ],
+					"patching_rect" : [ 980.0, 92.0, 85.0, 47.0 ],
 					"text" : "The result will be saved in the dict prices"
 				}
 
@@ -10050,7 +10026,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1333.25, 8.5, 102.0, 33.0 ],
+					"patching_rect" : [ 1333.25, 8.5, 104.0, 33.0 ],
 					"text" : "Get the list of current balances. "
 				}
 
@@ -10864,7 +10840,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 1 ],
-					"midpoints" : [ 464.0, 140.75, 717.5, 140.75 ],
+					"midpoints" : [ 464.0, 140.75, 745.08331298828125, 140.75 ],
 					"order" : 0,
 					"source" : [ "obj-64", 1 ]
 				}
@@ -10909,7 +10885,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 1 ],
-					"midpoints" : [ 605.75, 140.75, 717.5, 140.75 ],
+					"midpoints" : [ 605.75, 140.75, 745.08331298828125, 140.75 ],
 					"order" : 0,
 					"source" : [ "obj-72", 1 ]
 				}
@@ -11115,7 +11091,6 @@
 		"styles" : [ 			{
 				"name" : "light",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -11126,7 +11101,8 @@
 						"autogradient" : 0.0
 					}
 ,
-					"fontsize" : [ 32.0 ]
+					"fontsize" : [ 32.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

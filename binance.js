@@ -23,6 +23,8 @@ const binance = require('node-binance-api')().options({
   test: sandboxOnOff // If you want to use sandbox mode where orders are simulated
 });
 
+Max.post('Node script running');
+
 // Turn sandbox on and off 
 Max.addHandler("sandbox", (sandboxState) => {
   sandboxOnOff = sandboxState;
@@ -47,7 +49,6 @@ Max.addHandler("getPricesForAll", () => {
     Max.outlet("prices()", ticker);
   });
 });
-
 
 // Getting current balance for a specific crypto
 Max.addHandler("getCurrentBalanceFor", (balanceFor) => {
