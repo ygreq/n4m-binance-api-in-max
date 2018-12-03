@@ -46,8 +46,6 @@ Max.addHandler("authentification", (bang) => {
   Max.outlet("API secret sent to Binance: " + apiSecret);
 });
 
-
-
 // Getting latest price of a symbol
 Max.addHandler("symbolSelector", (symbolName) => {
   binance.prices(symbolName, (error, ticker) => {
