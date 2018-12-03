@@ -543,7 +543,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1954.0, 113.0, 1612.0, 899.0 ],
+						"rect" : [ 34.0, 77.0, 1468.0, 713.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -570,7 +570,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-81",
@@ -1157,7 +1156,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 858.0, 164.5, 104.0, 22.0 ],
-									"text" : "0.03817"
+									"text" : "0.03844"
 								}
 
 							}
@@ -5313,7 +5312,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 358.0, 161.0, 187.0, 22.0 ],
-									"text" : "ADAUSDT 0.03817"
+									"text" : "ADAUSDT 0.03844"
 								}
 
 							}

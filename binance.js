@@ -53,6 +53,7 @@ Max.addHandler("getPricesForAll", () => {
   });
 });
 
+
 // Getting current balance for a specific crypto
 Max.addHandler("getCurrentBalanceFor", (balanceFor) => {
   binance.balance((error, balances) => {
