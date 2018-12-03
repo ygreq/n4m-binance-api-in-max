@@ -9,6 +9,6 @@
   "author": "ygreq",
   "license": "ISC",
   "dependencies": {
-    "node-binance-api": "^0.8.3"
+    "node-binance-api": "^0.8.7"
   }
 }
