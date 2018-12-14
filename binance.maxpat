@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 83.0, 1468.0, 716.0 ],
+		"rect" : [ 2096.0, 192.0, 1466.0, 715.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -103,7 +103,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1274.84375, 116.0, 106.0, 20.0 ],
+					"patching_rect" : [ 1622.78125, 94.0, 55.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 669.28643798828125, 429.5, 47.0, 20.0 ],
 					"text" : "or type"
@@ -116,7 +116,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 790.5, 55.5, 58.0, 20.0 ],
+					"patching_rect" : [ 937.5, 49.0, 58.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 621.5625, 13.0, 58.0, 20.0 ],
 					"text" : "or type"
@@ -175,7 +175,7 @@
 					"patching_rect" : [ 839.5, 167.5, 79.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 591.125, 67.0, 79.0, 22.0 ],
-					"text" : "ADAUSDT"
+					"text" : "BTCUSDT"
 				}
 
 			}
@@ -355,7 +355,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 407.5, 343.0, 71.0, 22.0 ],
-									"text" : "ADAUSDT"
+									"text" : "BTCUSDT"
 								}
 
 							}
@@ -585,7 +585,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -596,7 +595,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -623,7 +623,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1259.84375, 101.0, 106.0, 20.0 ],
+					"patching_rect" : [ 1259.5728759765625, 94.0, 55.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 601.3125, 389.5, 47.0, 20.0 ],
 					"text" : "or type"
@@ -881,7 +881,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1768.78125, 94.0, 117.0, 47.0 ],
+					"patching_rect" : [ 1712.796875, 94.0, 117.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 454.5625, 461.0, 280.86456298828125, 20.0 ],
 					"text" : "The result will be saved here. Double click to open"
@@ -1059,7 +1059,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 432.0, 143.5, 322.58331298828125, 22.0 ],
-					"text" : "Node script not running, can't handle 'script stop'"
+					"text" : "Node script running"
 				}
 
 			}
@@ -2904,7 +2904,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -2915,7 +2914,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3088,7 +3088,7 @@
 					"patching_rect" : [ 1417.2916259765625, 225.5, 92.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 852.4166259765625, 124.5, 79.0, 33.0 ],
+					"presentation_rect" : [ 852.4166259765625, 124.5, 81.0, 33.0 ],
 					"text" : "Place a Limit Buy Order"
 				}
 
@@ -3103,7 +3103,7 @@
 					"patching_rect" : [ 1701.3228759765625, 225.5, 87.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 852.4166259765625, 201.0, 79.0, 33.0 ],
+					"presentation_rect" : [ 852.4166259765625, 201.0, 81.0, 33.0 ],
 					"text" : "Place a Limit Sell Order"
 				}
 
@@ -3374,7 +3374,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 14,
 					"numoutlets" : 10,
-					"outlettype" : [ "clear", "", "clear", "", "clear", "", "", "bang", "", "" ],
+					"outlettype" : [ "clear", "", "clear", "", "clear", "", "", "clear", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -3386,7 +3386,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2156.0, 149.0, 1466.0, 713.0 ],
+						"rect" : [ 34.0, 77.0, 1468.0, 713.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3413,7 +3413,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -3448,7 +3447,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1314.5, 373.0, 62.0, 49.0 ],
-									"presentation_linecount" : 3,
 									"text" : "if $f1 > 0. then 1 else 0"
 								}
 
@@ -3498,7 +3496,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1155.0, 333.5, 62.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "capitalize all letters"
 								}
 
@@ -3526,7 +3523,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1103.0, 275.0, 90.0, 49.0 ],
-									"presentation_linecount" : 3,
 									"text" : "vexpr $i1-32*($i1>96 && $i1<123)"
 								}
 
@@ -3640,7 +3636,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1228.0, 373.0, 62.0, 49.0 ],
-									"presentation_linecount" : 3,
 									"text" : "if $f1 > 0. then 1 else 0"
 								}
 
@@ -3751,7 +3746,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 931.5, 373.0, 62.0, 49.0 ],
-									"presentation_linecount" : 3,
 									"text" : "if $f1 > 0. then 1 else 0"
 								}
 
@@ -4452,7 +4446,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1033.25, 35.0, 44.5, 60.0 ],
+									"patching_rect" : [ 1033.25, 35.0, 47.0, 60.0 ],
 									"text" : "Place a Limit Sell Order"
 								}
 
@@ -5276,7 +5270,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -5287,7 +5280,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6346,7 +6340,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -6357,7 +6350,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6765,7 +6759,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 271.0, 207.5, 112.0, 22.0 ],
-									"text" : "3911."
+									"text" : "3288.78"
 								}
 
 							}
@@ -6789,7 +6783,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 358.0, 161.0, 187.0, 22.0 ],
-									"text" : "ADAUSDT 0.037"
+									"text" : "BTCUSDT 3288.78"
 								}
 
 							}
@@ -9123,7 +9117,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -9134,7 +9127,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -11313,7 +11307,6 @@
 						"styles" : [ 							{
 								"name" : "light",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -11324,7 +11317,8 @@
 										"autogradient" : 0.0
 									}
 ,
-									"fontsize" : [ 32.0 ]
+									"fontsize" : [ 32.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -11744,7 +11738,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1252.28125, 0.5, 120.0, 20.0 ],
+					"patching_rect" : [ 1884.489501953125, 88.0, 57.29168701171875, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 654.14581298828125, 227.5, 49.0, 20.0 ],
 					"text" : "or type"
@@ -11936,7 +11930,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 670.0, 576.0, 128.0, 128.0 ],
+					"patching_rect" : [ 41.5, 659.5, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 833.0728759765625, 280.0, 504.0, 316.0 ],
 					"proportion" : 0.5
@@ -11952,7 +11946,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 685.0, 591.0, 128.0, 128.0 ],
+					"patching_rect" : [ 56.5, 674.5, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 833.0728759765625, 1.5, 394.0, 272.0 ],
 					"proportion" : 0.5
@@ -11968,7 +11962,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 700.0, 606.0, 128.0, 128.0 ],
+					"patching_rect" : [ 71.5, 689.5, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 446.8125, 1.5, 369.0, 505.0 ],
 					"proportion" : 0.5
@@ -12799,7 +12793,6 @@
 		"styles" : [ 			{
 				"name" : "light",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color1" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -12810,7 +12803,8 @@
 						"autogradient" : 0.0
 					}
 ,
-					"fontsize" : [ 32.0 ]
+					"fontsize" : [ 32.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
