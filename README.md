@@ -9,7 +9,7 @@ Here is a forum where you can comment https://cycling74.com/forums/binance-crypt
 Installation guide
 
 1. Install Max from here: https://cycling74.com/downloads
-2. Clone or download the project. 
+2. Clone or download this project. 
 
 Let me know if these steps don't work for you.
 
