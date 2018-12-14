@@ -161,7 +161,7 @@
 					"patching_rect" : [ 1241.78125, 176.5, 79.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 591.375, 98.0, 79.0, 22.0 ],
-					"text" : "ADAUSDT"
+					"text" : "IOTAUSD"
 				}
 
 			}
@@ -4854,7 +4854,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2092.0, 205.0, 1466.0, 712.0 ],
+						"rect" : [ 5.0, 180.0, 1468.0, 714.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4887,7 +4887,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 472.0, 550.5, 120.0, 20.0 ],
+									"patching_rect" : [ 466.0, 313.5, 120.0, 20.0 ],
 									"text" : "coin you are tracking"
 								}
 
@@ -4900,7 +4900,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 432.0, 545.5, 30.0, 30.0 ]
+									"patching_rect" : [ 430.0, 313.5, 30.0, 30.0 ]
 								}
 
 							}
@@ -5235,8 +5235,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 338.0, 313.5, 71.0, 22.0 ],
-									"text" : "IOTAUSDT"
+									"patching_rect" : [ 338.0, 318.0, 71.0, 22.0 ],
+									"text" : "IOTAUSD"
 								}
 
 							}
@@ -5249,7 +5249,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 390.0, 252.5, 191.0, 22.0 ],
+									"patching_rect" : [ 390.0, 251.5, 191.0, 22.0 ],
 									"text" : "vexpr $i1-32*($i1>96 && $i1<123)"
 								}
 
@@ -5277,7 +5277,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "list" ],
-									"patching_rect" : [ 390.0, 227.5, 46.0, 22.0 ],
+									"patching_rect" : [ 390.0, 223.5, 46.0, 22.0 ],
 									"text" : "atoi"
 								}
 
@@ -5606,17 +5606,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-46", 0 ],
-									"order" : 0,
-									"source" : [ "obj-14", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-47", 0 ],
-									"midpoints" : [ 347.5, 345.5, 238.75, 345.5, 238.75, 127.0, 253.0, 127.0 ],
-									"order" : 1,
+									"midpoints" : [ 347.5, 346.5, 238.75, 346.5, 238.75, 127.0, 253.0, 127.0 ],
 									"source" : [ "obj-14", 0 ]
 								}
 
@@ -5670,6 +5661,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 1 ],
+									"order" : 1,
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"midpoints" : [ 399.5, 306.0, 439.5, 306.0 ],
 									"order" : 0,
 									"source" : [ "obj-20", 0 ]
 								}
@@ -5679,8 +5679,17 @@
 								"patchline" : 								{
 									"destination" : [ "obj-47", 0 ],
 									"midpoints" : [ 399.5, 307.0, 369.25, 307.0, 369.25, 129.0, 253.0, 129.0 ],
-									"order" : 1,
+									"order" : 2,
 									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 1 ],
+									"midpoints" : [ 439.5, 307.25, 399.5, 307.25 ],
+									"order" : 1,
+									"source" : [ "obj-22", 1 ]
 								}
 
 							}
@@ -5693,8 +5702,17 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"order" : 0,
+									"source" : [ "obj-22", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-47", 0 ],
 									"midpoints" : [ 439.5, 218.0, 369.75, 218.0, 369.75, 130.0, 253.0, 130.0 ],
+									"order" : 2,
 									"source" : [ "obj-22", 1 ]
 								}
 
@@ -6385,7 +6403,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 271.0, 207.5, 112.0, 22.0 ],
-									"text" : "3280.3"
+									"text" : "3279.29"
 								}
 
 							}
@@ -6409,7 +6427,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 358.0, 161.0, 187.0, 22.0 ],
-									"text" : "BNBBTC 0.001431"
+									"text" : "BTCUSDT 3279.29"
 								}
 
 							}
@@ -11396,8 +11414,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1252.28125, 60.5, 91.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 705.39581298828125, 16.0, 78.0, 28.0 ],
-					"text" : "IOTAUSDT"
+					"presentation_rect" : [ 705.39581298828125, 16.0, 78.0, 28.0 ]
 				}
 
 			}
