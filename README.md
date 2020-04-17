@@ -1,3 +1,5 @@
+THIS NOW HAS A FEW BIG VULNERABILITIES SO DO NOT USE
+
 # n4m-binance-api-in-max
 This is a repository for a Node for Max implementation (https://cycling74.com/) 
 of the Binance API (https://github.com/binance-exchange/binance-official-api-docs) 
